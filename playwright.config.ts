@@ -10,7 +10,7 @@ export default defineConfig({
   fullyParallel: false,
   retries: process.env.CI ? 1 : 0,
   workers: 1,
-  reporter: [["html", { open: "never" }], ["list"]],
+  reporter: [["html", { open: "never" }], ["list"], ["allure-playwright", { resultsDir: "allure-results" }]],
   use: {
     baseURL: process.env.BASE_URL ?? "http://localhost:8080",
     trace: "retain-on-failure",
