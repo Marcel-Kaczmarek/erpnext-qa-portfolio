@@ -34,47 +34,6 @@ Full breakdown: [Test Execution Summary](docs/qa/test-execution-summary.md) · [
 
 ---
 
-## Application screenshots
-
-Real screenshots of the local ERPNext instance under test (not stock images), 1440×900, populated with realistic synthetic data via [`scripts/capture-screenshots.js`](scripts/capture-screenshots.js).
-
-<table>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/01-dashboard.png" width="100%"/><br/><sub><b>Dashboard</b> — ERPNext home workspace</sub></td>
-<td width="50%"><img src="docs/screenshots/application/02-sales-workspace.png" width="100%"/><br/><sub><b>Sales workspace</b> — Selling module</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/03-customer-creation.png" width="100%"/><br/><sub><b>Customer creation</b> — new Customer form</sub></td>
-<td width="50%"><img src="docs/screenshots/application/04-customer-list.png" width="100%"/><br/><sub><b>Customer list view</b></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/05-item-creation.png" width="100%"/><br/><sub><b>Item creation</b> — new Item form</sub></td>
-<td width="50%"><img src="docs/screenshots/application/06-item-list.png" width="100%"/><br/><sub><b>Item list view</b></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/07-quotation-creation.png" width="100%"/><br/><sub><b>Quotation creation</b> — line item + customer</sub></td>
-<td width="50%"><img src="docs/screenshots/application/08-quotation-submitted.png" width="100%"/><br/><sub><b>Quotation submitted</b></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/09-sales-order-creation.png" width="100%"/><br/><sub><b>Sales Order</b> — mapped from Quotation</sub></td>
-<td width="50%"><img src="docs/screenshots/application/10-sales-order-submitted.png" width="100%"/><br/><sub><b>Sales Order submitted</b></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/11-sales-invoice-creation.png" width="100%"/><br/><sub><b>Sales Invoice</b> — mapped from Sales Order</sub></td>
-<td width="50%"><img src="docs/screenshots/application/12-sales-invoice-submitted.png" width="100%"/><br/><sub><b>Sales Invoice submitted</b> — matching grand total</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/13-employee-creation.png" width="100%"/><br/><sub><b>Employee creation</b></sub></td>
-<td width="50%"><img src="docs/screenshots/application/14-employee-list.png" width="100%"/><br/><sub><b>Employee list view</b></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/application/15-global-search.png" width="100%"/><br/><sub><b>Global search</b> — finds an indexed Customer</sub></td>
-<td width="50%"><img src="docs/screenshots/application/16-form-validation-error.png" width="100%"/><br/><sub><b>Form validation</b> — "Missing Fields" dialog</sub></td>
-</tr>
-</table>
-
----
-
 ## Business domain and project objectives
 
 [ERPNext](https://github.com/frappe/erpnext) is an open-source ERP built on the [Frappe](https://github.com/frappe/frappe) framework. This project automates ERPNext's **Order-to-Cash** flow — the path from a prospective sale to recognized revenue — plus the master data it depends on.
@@ -252,6 +211,47 @@ Session-login auth (`/api/method/login`) is used instead of a static API key/sec
 | Procurement (Purchase Order/Invoice) | — | — *(out of scope — see [Business Domain](#business-domain-and-project-objectives))* |
 
 Full matrix with notes: [docs/qa/feature-coverage-matrix.md](docs/qa/feature-coverage-matrix.md). Requirements-level traceability: [docs/qa/requirements-traceability-matrix.md](docs/qa/requirements-traceability-matrix.md).
+
+---
+
+## Application screenshots
+
+Real screenshots of the local ERPNext instance under test (not stock images), 1440×900, populated with realistic synthetic data via [`scripts/capture-screenshots.js`](scripts/capture-screenshots.js).
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/01-dashboard.png" width="100%"/><br/><sub><b>Dashboard</b> — ERPNext home workspace</sub></td>
+<td width="50%"><img src="docs/screenshots/application/02-sales-workspace.png" width="100%"/><br/><sub><b>Sales workspace</b> — Selling module</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/03-customer-creation.png" width="100%"/><br/><sub><b>Customer creation</b> — new Customer form</sub></td>
+<td width="50%"><img src="docs/screenshots/application/04-customer-list.png" width="100%"/><br/><sub><b>Customer list view</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/05-item-creation.png" width="100%"/><br/><sub><b>Item creation</b> — new Item form</sub></td>
+<td width="50%"><img src="docs/screenshots/application/06-item-list.png" width="100%"/><br/><sub><b>Item list view</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/07-quotation-creation.png" width="100%"/><br/><sub><b>Quotation creation</b> — line item + customer</sub></td>
+<td width="50%"><img src="docs/screenshots/application/08-quotation-submitted.png" width="100%"/><br/><sub><b>Quotation submitted</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/09-sales-order-creation.png" width="100%"/><br/><sub><b>Sales Order</b> — mapped from Quotation</sub></td>
+<td width="50%"><img src="docs/screenshots/application/10-sales-order-submitted.png" width="100%"/><br/><sub><b>Sales Order submitted</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/11-sales-invoice-creation.png" width="100%"/><br/><sub><b>Sales Invoice</b> — mapped from Sales Order</sub></td>
+<td width="50%"><img src="docs/screenshots/application/12-sales-invoice-submitted.png" width="100%"/><br/><sub><b>Sales Invoice submitted</b> — matching grand total</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/13-employee-creation.png" width="100%"/><br/><sub><b>Employee creation</b></sub></td>
+<td width="50%"><img src="docs/screenshots/application/14-employee-list.png" width="100%"/><br/><sub><b>Employee list view</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/application/15-global-search.png" width="100%"/><br/><sub><b>Global search</b> — finds an indexed Customer</sub></td>
+<td width="50%"><img src="docs/screenshots/application/16-form-validation-error.png" width="100%"/><br/><sub><b>Form validation</b> — "Missing Fields" dialog</sub></td>
+</tr>
+</table>
 
 ---
 
